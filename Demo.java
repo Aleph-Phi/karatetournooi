@@ -9,7 +9,6 @@ class Demo{
 		Tournooi karateTournooi = new Tournooi();
 		karateTournooi.setNaam(naamTournooi);
 		karateTournooi.welkom();
-
 		System.out.println("Wil u al mensen aanmelden? \n 1 ja 2 nee");
 		int antwoordNogEen = scanner.nextInt();
 		if(antwoordNogEen == 1) {
@@ -32,8 +31,7 @@ class Tournooi{
 	void setNaam(String naam) {
 		this.naam = naam;
 	}
-	void voegDeelnemersToe() {
-		
+	void voegDeelnemersToe() {		
 		System.out.print("Wat is uw naam");
 		String deNaam = scanner.next();
 		Deelnemer deelnemer = new Deelnemer(deNaam);
